@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/images/icon.png" />
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="/javascripts/bootstrap.bundle.min.js" defer></script>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <%- include('partials/header'); -%>
+    <%- include('partials/content'); -%>
+
+    <!-- display projects -->
+    <div class="row p-3">
+      <div class="col text-center">
+        <img src="/images/project1.webp" alt="" height="180" class=".img-fluid" />
+        <p class="text-center p-3">Product Manager</p>
+        <p class="text-center">I have two years of experience as a product manager, 
+          mainly responsible for mall type products, customizing mall type mobile apps for clients.</p>
+      </div>
+      <div class="col text-center">
+        <img src="/images/projectbug.jpeg" alt="" height="180" class=".img-fluid" />
+        <p class="text-center p-3">Bug Smasher</p>
+        <p class="text-center">This is a small web game made in JavaScript that I worked on independently,
+          using canava to implement it.</p>
+      </div>
+      <div class="col text-center">
+        <img src="/images/project2.jpeg" alt="" height="180" class=".img-fluid" />
+        <p class="text-center p-3">My Website</p>
+        <p class="text-center">This project is a personal website using the bootstrap framework.</p>
+      </div>
+    </div>
+
+    <%- include('partials/footer'); -%>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/images/icon.png" />
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="/javascripts/bootstrap.bundle.min.js" defer></script>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <%- include('partials/header'); -%>
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/images/bg_index.jpeg" class="d-block w-100" alt="..." height="460">
+          <div class="carousel-caption d-none d-md-block">
+            <p class="h1">Welcome to RW studio</p>
+            <br>
+            <p class="fs-4">Internet changes life.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="justify-content-center p-3">
+      <div>
+        <p class="text-center fs-2 p-5">Our services cover all aspects of web application development: from digital strategy ideation to a user-centered design, from developing a strong the back-end architecture to ensuring a perfect user experience.</p>
+      </div>
+    </div>
+
+    <%- include('partials/footer'); -%>
+  </body>
+</html>

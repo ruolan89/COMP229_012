@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/images/icon.png" />
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <script src="/javascripts/bootstrap.bundle.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js" defer></script>
+    <script src="/javascripts/about_pdf.js" defer></script>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <%- include('partials/header'); -%>
+    <%- include('partials/content'); -%>
+
+    <div class="row">
+      <div class="col-2 text-center">
+        <img src="/images/I.JPG" alt="" height="140" class=".img-fluid" />
+      </div>
+      <div class="col">
+        <p class="text-start">
+          My name is Ruolan Wang, I am studying Artificial Intelligence -
+          Software Engineering Technology in Centennial College. Now, it is my
+          third semester.
+        </p>
+        <button id="downloadFileBtn" class="btn btn-primary">Download</button>
+      </div>
+    </div>
+
+    <%- include('partials/footer'); -%>
+  </body>
+</html>

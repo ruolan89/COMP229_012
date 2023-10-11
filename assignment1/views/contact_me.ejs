@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/images/icon.png" />
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="/javascripts/bootstrap.bundle.min.js" defer></script>
+    <script src="/javascripts/contact_form.js" defer></script>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <%- include('partials/header'); -%>
+    
+    <div class="d-flex justify-content-center">
+      <form action="/" class="needs-validation w-75 p-3" novalidate>
+        <p class="h5 text-center fs-2">Contact Me</p>
+        <div class="mb-3">
+          <label for="formGroupExampleInput" class="form-label">First Name</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" required/>
+        </div>
+        <div class="mb-3">
+          <label for="formGroupExampleInput2" class="form-label">Last Name</label>
+          <input type="text" class="form-control" id="formGroupExampleInput2" required/>
+        </div>
+        <div class="mb-3">
+          <label for="formGroupExampleInput2" class="form-label" >Contact Number</label>
+          <input type="text" class="form-control" id="formGroupExampleInput2"/>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label" required>Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label" required>Message</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" required></textarea>
+        </div>
+        <div class="d-flex justify-content-center">
+          <button type="submit" class="btn btn-primary w-25">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <%- include('partials/footer'); -%>
+  </body>
+</html>

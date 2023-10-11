@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/images/icon.png" />
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="/javascripts/bootstrap.bundle.min.js" defer></script>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <%- include('partials/header'); -%>
+    <%- include('partials/content'); -%>
+
+    <div class="row p-3">
+      <div class="col text-center">
+        <img src="/images/web.jpeg" alt="" height="200" class=".img-fluid" />
+        <p class="text-center p-3">General Programming</p>
+      </div>
+      <div class="col text-center">
+        <img src="/images/programming.jpeg" alt="" height="200" class=".img-fluid" />
+        <p class="text-center p-3">Web Development</p>
+      </div>
+    </div>
+
+    <%- include('partials/footer'); -%>
+  </body>
+</html>
