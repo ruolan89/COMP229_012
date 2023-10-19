@@ -42,7 +42,7 @@ const productByID = async (req, res) => {
 };
 const productByName = async (req, res, next, name) => {
   try {
-    let products = await Products.find({name: String(name)});
+    let products = await Products.find({name: new RegExp(String(name), 'i')});
     if (!products)
       return res.status("400").json({
         error: "Product not found",
